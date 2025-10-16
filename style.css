@@ -1,0 +1,668 @@
+/* General Styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Poppins" ;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+.main-header {
+    background: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #f44e7c;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #f44e7c;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info span {
+    margin-right: 15px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.small-button {
+    background: #f44e7c;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.small-button:hover {
+    background: #e65a9e;
+}
+
+.hero-section {
+    background: linear-gradient(to bottom, #fce4ec, #ffffff);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    position: relative;
+}
+
+.hero-text {
+    max-width: 500px;
+    margin-right: 50px;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    color: #f44e7c;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.button {
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.primary-button {
+    background: #f44e7c;
+    color: white;
+
+}
+
+.primary-button:hover {
+    background: #e14571;
+    transform: translateY(-2px);
+}
+
+.button-container-full .primary-button {
+    padding: 12px 40px;
+    width: auto;
+}       
+
+.button-container-full {
+    text-align: center; 
+    margin-top: 40px; 
+}
+
+.features-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    text-align: center;
+    margin: 0 30px;
+    max-width: 180px;
+}
+
+.feature-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #f44e7c;
+    font-weight: 500;
+}
+
+.menu-overview-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fdfdfd;
+}
+
+.menu-overview-section h2 {
+    color: #333;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fce4ec; 
+}
+
+.contact-layout-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 50px; 
+    flex-wrap: wrap ; 
+}
+
+.contact-info-block,
+.address-info-block {
+    flex: 1; 
+    max-width: 450px;
+}
+
+.contact-info-block h2,
+.address-info-block h2 {
+    color: #f44e7c; 
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-item a:hover {
+    transform: translateY(-5px);
+    color: #f44e7c;
+}
+
+.contact-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.contact-item span {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.address-info-block p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 2; 
+}
+
+.menu-grid {
+    display: flex ;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.menu-container {
+    display: flex ;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.product-card {
+    width: 250px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px; 
+    object-fit: block ; 
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px;
+    display: flex; 
+    flex-direction: column; 
+    height: auto ; 
+    justify-content: space-between; 
+}
+
+.card-content {
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 15px;
+}
+
+.card-content h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin: 10px 0;
+    flex-grow: 1; 
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #f44e7c;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: center; 
+}
+
+.card-content p {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 10px 10px 10px 10px; 
+    text-align: justify;
+}
+
+.add-to-cart-button {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.add-to-cart-button:hover {
+    background: #218838;
+}
+
+.item-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.delete-item-button {
+    background-color: #ffd8d4;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-item-button:hover {
+    background-color: #1f0401;
+}
+
+.clear-cart-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+}
+
+.clear-cart-button:hover {
+    background-color: #922417;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #343a40;
+    color: white;
+    margin-top: 0;
+}
+
+.login-card {
+    width: 350px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.form-card {
+    width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.form-card h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #f44e7c;
+    box-shadow: 0 0 5px rgba(255,105,180,0.5);
+}
+
+.form-link {
+    margin-top: 20px;
+}
+
+.form-link a {
+    color: #f44e7c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.form-link a:hover {
+    color: #e65a9e;
+    text-decoration: underline;
+}
+
+.button.primary-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+.cart-page {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cart-container {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.product-card img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 8px; 
+}
+
+.product-image-container {
+    width: 100%;
+    padding-top: 100%; 
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.product-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-details h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.item-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.item-quantity input {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #f44e7c;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.summary-row.total {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f44e7c;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background: #0056b3;
+}
+
+/* Styling untuk Halaman Pembayaran */
+.payment-page {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.payment-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.customer-info-card,
+.order-summary-card,
+.payment-method-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 30px;
+    flex: 1 1 400px;
+}
+
+.customer-info-card h2,
+.order-summary-card h2,
+.payment-method-card h2 {
+    color: #f44e7c;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.info-group {
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 20px;
+} 
+
+.info-group label {
+    text-align: left;
+    margin-bottom: 8px; 
+    font-weight: bold;
+}
+
+.info-group input,
+.info-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1.2rem; 
+    color: #333; 
+
+}
+
+.info-group span {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info-group p {
+    color: #333;
+    font-size: 2rem;
+}
+
+.payment-items-container {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.payment-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.summary-details .summary-row {
+    font-size: 1rem;
+}
+
+.payment-method-card button {
+    width: 100%;
+}
+
+.payment-section {
+    margin-bottom: 20px;
+}
+
+.payment-section h3 {
+    color: #f44e7c;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: left;
+}

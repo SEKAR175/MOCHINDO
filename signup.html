@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochindo - Daftar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">MOCHINDO</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="cart.html">Keranjang</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <span>0859 5413 8582</span>
+                <button class="small-button">Order</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-card">
+            <h2>Daftar Akun Baru</h2>
+            <form action="signup.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan alamat email Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Kata Sandi</label>
+                    <input type="password" id="password" name="password" placeholder="Buat kata sandi baru" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Konfirmasi Kata Sandi</label>
+                    <input type="password" id="confirm-password" name="confirm_password" placeholder="Ulangi kata sandi" required>
+                </div>
+                <button type="submit" class="button primary-button">Daftar</button>
+            </form>
+            <div class="form-link">
+                <p>Sudah punya akun? <a href="login.html">Masuk di sini</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Mochindo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
