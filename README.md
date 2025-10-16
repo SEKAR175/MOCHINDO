@@ -43,6 +43,10 @@ CREATE TABLE IF NOT EXISTS cart_items (
 
 3. run
 
+ALERT
+- pastikan apache dan mysql nyala yah
+- akses lewat http://localhost/mochindo
+
 semoga membantu, tengs ol.
 made endless tears of 'joy', sekar
 - 2025.
